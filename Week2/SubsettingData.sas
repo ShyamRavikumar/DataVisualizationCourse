@@ -21,7 +21,7 @@ LABEL
       2) Should have provided the grades for at least one of the subjects */
 
 IF H1GI18=1; /*A response of 1 indicates that the student is/was in school in this/past year.*/
-IF H1ED11 IN (1,2,3,4)
+IF H1ED11 IN (1,2,3,4) /*Consider records only if at least 1 rating was given, to any of the subjects *?
     OR H1ED12 IN (1,2,3,4)
     OR H1ED13 IN (1,2,3,4)
     OR H1ED14 IN (1,2,3,4);
